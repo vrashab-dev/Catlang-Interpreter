@@ -1,8 +1,9 @@
 package lexer
 
 import (
-	"Catlang/token"
 	"testing"
+	
+	"Catlang/token"
 )
 
 func TestNextToken(t *testing.T) {
