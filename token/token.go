@@ -22,7 +22,7 @@ const (
 	MINUS  = "-"
 	MUL    = "*"
 	DIV    = "/"
-	MOD    = "%%"
+	MOD    = "%"
 
 	// Delimiters
 	COMMA     = ","

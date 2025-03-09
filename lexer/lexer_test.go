@@ -2,12 +2,12 @@ package lexer
 
 import (
 	"testing"
-	
+
 	"Catlang/token"
 )
 
 func TestNextToken(t *testing.T) {
-	input := `=+-{}(),;`
+	input := `=+-*/%,;{}()`
 	tests := []struct {
 		expectedType    token.TokenType
 		expectedLiteral string
@@ -17,7 +17,7 @@ func TestNextToken(t *testing.T) {
 		{token.MINUS, "-"},
 		{token.MUL, "*"},
 		{token.DIV, "/"},
-		{token.MOD, "%%"},
+		{token.MOD, "%"},
 		{token.COMMA, ","},
 		{token.SEMICOLON, ";"},
 		{token.LBRACE, "{"},
